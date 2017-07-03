@@ -35,7 +35,7 @@ app.get('*', function (request, response){
 })
 
 const server = app.listen(process.env.PORT || 8080, function() {
-  const host = server.address().address;
+  const host = server.address().address || '0.0.0.0';
   const port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
 });
