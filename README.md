@@ -30,3 +30,7 @@ grunt
 ```
 
 You will need to cancel and re-run grunt whenever you make a javascript change, as I have not added js checker to my Gruntfile yet. If you do this feel free to do a pull request and I'll update it.
+
+Deploy
+---
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
