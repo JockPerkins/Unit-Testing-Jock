@@ -31,8 +31,8 @@ function npmInstall(){
 // function to test the database authentication
 function testDatabase(){
   console.error(chalk.blue('--- testing database ---\n'));
-  /*return new Promise(function (fulfill, reject){
-    if (config.use_env_variable) {
+  return new Promise(function (fulfill, reject){
+    /*if (config.use_env_variable) {
       var sequelize = new Sequelize(process.env[config.use_env_variable]);
     }
     else {
@@ -232,18 +232,18 @@ function runAllTests(){
     fileTest().then(() => {
       apiTest().then(() => {
         console.log(chalk.magenta('Testing Complete\n'));
-        process.exit(1);
+        process.exit(0);
       }).catch((err) => {
         console.error(chalk.red(err));
-        process.exit(0);
+        process.exit(1);
       })
     }).catch((err) => {
       console.error(chalk.red(err));
-      process.exit(0);
+      process.exit(1);
     })
   }).catch((err) => {
     console.error(chalk.red(err));
-    process.exit(0);
+    process.exit(1);
   })
 }
 
