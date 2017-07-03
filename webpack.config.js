@@ -1,6 +1,9 @@
 const path = require('path');
+var alias = {};
+alias['fbjs/lib/memoizeStringOnly'] = '../node_modules/fbjs/lib/memoizeStringOnly';
 
 module.exports = {
+  alias : alias,
   context: path.join(__dirname, 'src'),
   entry: [
     'main.js',
