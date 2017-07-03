@@ -3,7 +3,7 @@ var alias = {};
 alias['fbjs/lib/memoizeStringOnly'] = '../node_modules/fbjs/lib/memoizeStringOnly';
 
 module.exports = {
-  alias : alias,
+  //alias : alias,
   context: path.join(__dirname, 'src'),
   entry: [
     'main.js',
