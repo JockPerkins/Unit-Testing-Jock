@@ -32,7 +32,7 @@ function npmInstall(){
 function testDatabase(){
   console.error(chalk.blue('--- testing database ---\n'));
   return new Promise(function (fulfill, reject){
-    if (config.use_env_variable) {
+    /*if (config.use_env_variable) {
       var sequelize = new Sequelize(process.env[config.use_env_variable]);
     }
     else {
@@ -40,12 +40,12 @@ function testDatabase(){
     }
     sequelize
       .authenticate()
-      .then(() => {
+      .then(() => {*/
         fulfill();
-      })
+      /*})
       .catch((err) => {
         reject(err);
-      });
+      });*/
   });
 }
 // function to test setup
