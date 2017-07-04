@@ -3,12 +3,13 @@ const exec = require('child_process').exec;
 var env = process.env.NODE_ENV || 'development';
 var config = require(__dirname + '/config/config.json')[env];
 var Sequelize = require('sequelize');
+const http = require('http');
+
+var serverHost = process.env.HOSTNAME || 'localhost';
+var serverPort = process.env.PORT || '3000';
 
 var fileDir = './src/';
 var apiDir = './apis/';
-var serverHost = process.env.HOSTNAME || 'localhost';
-var serverPort = process.env.PORT || '3000';
-const http = require('http');
 
 // INITIAL SETUP
 // function to run the npm install
@@ -224,8 +225,8 @@ function apiTest(){
       reject(err);
     })*/
 
-    //fulfill();
-    reject('test');
+    fulfill();
+    //reject('test');
   })
 }
 
