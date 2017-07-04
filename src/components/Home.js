@@ -25,7 +25,7 @@ class Home extends React.Component {
       <div id="home">
         <div className="container">
           <div className="main-content">
-            <h1>This is a shell change here</h1>
+            <h1>This is a shell</h1>
           </div>
         </div>
       </div>
