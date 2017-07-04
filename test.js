@@ -100,7 +100,7 @@ function jsLintAll(fileList){
       let result = fileList.map((theFile) => {
         return jsLintSingle(theFile);
       })
-      Promise.all(result).then((results) => {*/
+      Promise.all(result).then((results) => {
         fulfill();
       }).catch((err) => {
         console.error(chalk.red('Error when testing files\n'));
