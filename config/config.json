@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "local",
-    "password": "password",
-    "database": "react-project",
-    "host": "localhost",
+    "username": "sql8183395",
+    "password": "FiSU2Uj2Fb",
+    "database": "sql8183395",
+    "host": "sql8.freemysqlhosting.net",
     "dialect": "mysql"
   }
 }
