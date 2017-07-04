@@ -97,15 +97,15 @@ function getAllFiles(dir, filelist) {
 // Runs linter for each file
 function jsLintAll(fileList){
   return new Promise(function(fulfill, reject){
-      /*let result = fileList.map((theFile) => {
+      let result = fileList.map((theFile) => {
         return jsLintSingle(theFile);
       })
       Promise.all(result).then((results) => {*/
         fulfill();
-      /*}).catch((err) => {
+      }).catch((err) => {
         console.error(chalk.red('Error when testing files\n'));
         reject(err);
-      })*/
+      })
   })
 }
 // Singular linter
