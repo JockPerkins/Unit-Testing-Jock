@@ -211,7 +211,7 @@ function apiTestSingle(thisApi){
 function apiTest(){
   console.log(chalk.magenta('\nBeginning API Test:\n'))
   return new Promise(function(fulfill, reject){
-    /*getAllApis(apiDir).then((result) => {
+    getAllApis(apiDir).then((result) => {
       console.log(chalk.green('Success when getting apis\n'));
       console.error(chalk.blue('--- testing all apis ---\n'));
       apiTestAll(result).then(() => {
@@ -223,9 +223,9 @@ function apiTest(){
     }).catch((err) => {
       console.error(chalk.red('Error when getting apis\n'));
       reject(err);
-    })*/
+    })
 
-    fulfill();
+    //fulfill();
     //reject('test');
   })
 }
