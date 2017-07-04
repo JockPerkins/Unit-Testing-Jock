@@ -214,15 +214,18 @@ function apiTest(){
       console.log(chalk.green('Success when getting apis\n'));
       console.error(chalk.blue('--- testing all apis ---\n'));
       apiTestAll(result).then(() => {
-        console.log(chalk.green('\nSuccess when testing apis\n'));*/
+        console.log(chalk.green('\nSuccess when testing apis\n'));
         fulfill();
-      /*}).catch((err) => {
+      }).catch((err) => {
         reject(err);
       })
     }).catch((err) => {
       console.error(chalk.red('Error when getting apis\n'));
       reject(err);
     })*/
+
+    //fulfill();
+    reject('test');
   })
 }
 
